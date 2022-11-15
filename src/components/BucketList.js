@@ -21,7 +21,8 @@ function BucketList() {
     let updatedBucket = bucket.map((item) => {
       if (item.id === id) {
         // make as complete
-        item.isComplete = true;
+        // makes the item togglable
+        item.isComplete = !item.isComplete;
       }
       // TODO: Write logic that marks an item as complete or incomplete when invoked
       return item;
