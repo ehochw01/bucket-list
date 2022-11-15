@@ -23,8 +23,8 @@ function Bucket(props) {
   return props.bucket.map((item, index) => (
     <div 
       className={
-        item.isComplete 
-          ? `bucket row complete ${item.eagerness}`
+        item.isComplete
+          ? `bucket-row complete ${item.eagerness}`
           : `bucket-row ${item.eagerness}`
         } 
       key={index}
